@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212858003239703756}
   - component: {fileID: 50493682144960648}
   - component: {fileID: 60308929004578794}
+  - component: {fileID: 114213552233090448}
+  - component: {fileID: 114852859082386988}
   m_Layer: 0
   m_Name: meteorBrown_med1
   m_TagString: Untagged
@@ -35,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670864764874970}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: 4.6896114, y: 0.89981824, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!50 &50493682144960648
 Rigidbody2D:
   serializedVersion: 4
@@ -92,6 +94,29 @@ PolygonCollider2D:
       - {x: 0.0014014244, y: -0.18901712}
       - {x: 0.19239902, y: -0.06298077}
       - {x: 0.15962744, y: 0.17066795}
+--- !u!114 &114213552233090448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670864764874970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5878e6f6c08314586a20165d2258fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 4
+--- !u!114 &114852859082386988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670864764874970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2fd447319918aa40aeaf5b730078401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212858003239703756
 SpriteRenderer:
   m_ObjectHideFlags: 1
