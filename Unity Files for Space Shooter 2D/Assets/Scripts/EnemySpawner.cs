@@ -8,7 +8,6 @@ public class EnemySpawner : MonoBehaviour
 	public GameObject enemyPrefab;  // TODO: Make an array of enemy prefabs
 	public GameObject bossPrefab;
 
-
 	// Private boss vars
 	GameObject bossInstance;
 	bool bossSpawned = false;
@@ -19,13 +18,15 @@ public class EnemySpawner : MonoBehaviour
 	float enemyRate = 5f;
 	float nextEnemy = 1f;
 
-	// TODO: Test
 	public float timeUntilBoss = 10f;
+	bool bossDefeated = false;
 	
 	// Update is called once per frame
 	void Update ()
 	{
 		if (timeUntilBoss >= 0) {
+			// Boss timer has not expired yet
+
 			nextEnemy -= Time.deltaTime;
 			timeUntilBoss -= Time.deltaTime;
 
@@ -47,7 +48,9 @@ public class EnemySpawner : MonoBehaviour
 			}
 
 		} else if (!bossSpawned) {
-
+			// Boss timer has expired
+			// Add artificial delay until Boss is spawned
+			
 			bossSpawnDelay -= Time.deltaTime;
 
 			if (bossSpawnDelay <= 0 && !bossSpawned) {
@@ -59,11 +62,12 @@ public class EnemySpawner : MonoBehaviour
 				offset = offset.normalized * spawnDistance;
 				bossInstance = (GameObject)Instantiate (bossPrefab, transform.position + offset, Quaternion.identity);
 			}
-		} else {
+		} else if (!bossDefeated) {
 			// Boss has spawned
 
 			if (bossInstance == null) {
-				Debug.Log ("Boss died?");
+				bossDefeated = true;
+				FindObjectOfType<GameManager> ().BossDefeated ();
 			}
 		}
 	}
