@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 	bool bossDefeated = false;
 
 	public float restartDelay = 5f;
+	public float nextLevelDelay = 5f;
 
 	public GameObject completeLevelUI;
 
@@ -20,13 +21,16 @@ public class GameManager : MonoBehaviour {
 		// Boss is defeated -> start next level
 		Debug.Log ("Boss defeated");
 		completeLevelUI.SetActive (true);
+		Invoke ("NextLevel", nextLevelDelay);
 	}
 
 	void RestartLevel() {
+		// Reload scene
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 	}
 
 	void NextLevel() {
-
+		// Load the next level as indicated in the build settings
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 }
