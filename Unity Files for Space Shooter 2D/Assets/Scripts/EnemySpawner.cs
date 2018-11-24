@@ -62,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
 				offset = offset.normalized * spawnDistance;
 				bossInstance = (GameObject)Instantiate (bossPrefab, transform.position + offset, Quaternion.identity);
 			}
-		} else if (!bossDefeated) {
+		} else if (!bossDefeated && bossSpawned) {
 			// Boss has spawned
 
 			if (bossInstance == null) {
