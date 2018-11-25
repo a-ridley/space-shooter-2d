@@ -240,6 +240,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473,
+        type: 2}
+      propertyPath: medMeteorRateHigh
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473,
+        type: 2}
+      propertyPath: bigMeteorRateHigh
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 621b1186f058b4e4f87f7c127387c473, type: 2}
   m_IsPrefabParent: 0
@@ -500,7 +510,7 @@ Prefab:
         type: 2}
       propertyPath: bossPrefab
       value: 
-      objectReference: {fileID: 1829871410087242, guid: 8150fb97616cd1541b295abf6e58a3ee,
+      objectReference: {fileID: 1900213642060734, guid: 82332cf1a59f7234db012d61410dff69,
         type: 2}
     - target: {fileID: 114373652354022822, guid: 8f32b50b186bc924eabe149b05afc279,
         type: 2}

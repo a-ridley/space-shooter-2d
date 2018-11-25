@@ -292,8 +292,13 @@ Prefab:
         type: 2}
       propertyPath: bossPrefab
       value: 
-      objectReference: {fileID: 1829871410087242, guid: 8150fb97616cd1541b295abf6e58a3ee,
+      objectReference: {fileID: 1933728292237388, guid: 6bef4a34e851189479c023d762f82f4c,
         type: 2}
+    - target: {fileID: 114373652354022822, guid: 8f32b50b186bc924eabe149b05afc279,
+        type: 2}
+      propertyPath: timeUntilBoss
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f32b50b186bc924eabe149b05afc279, type: 2}
   m_IsPrefabParent: 0
