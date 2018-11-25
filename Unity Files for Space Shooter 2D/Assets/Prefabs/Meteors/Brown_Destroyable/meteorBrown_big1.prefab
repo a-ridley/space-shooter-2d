@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 60538538146536766}
   - component: {fileID: 114574376685693380}
   - component: {fileID: 114664434799640896}
+  - component: {fileID: 114823124577309400}
   m_Layer: 0
   m_Name: meteorBrown_big1
   m_TagString: Untagged
@@ -118,6 +119,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fd447319918aa40aeaf5b730078401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114823124577309400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995222507009378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d165daa8a7e4cfc4380ca865b8e81c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  invulnPeriod: 0
 --- !u!212 &212257822972044160
 SpriteRenderer:
   m_ObjectHideFlags: 1
