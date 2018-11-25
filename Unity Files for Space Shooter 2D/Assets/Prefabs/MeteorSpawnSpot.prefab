@@ -54,5 +54,10 @@ MonoBehaviour:
   meteors:
   - {fileID: 1670864764874970, guid: 976503c26a5033842a968fce4d57cf92, type: 2}
   - {fileID: 1101278520976798, guid: 163b7b5453310c44e806fb861da3c04b, type: 2}
+  - {fileID: 1904081677891142, guid: 5ef6d8c501482334099b95c3d30654fb, type: 2}
   - {fileID: 1995222507009378, guid: ecc7571fbbd442944983c0562aea60be, type: 2}
   - {fileID: 1464296321518038, guid: 2d94fbbfff9f9e44fb3b48ecf59c0942, type: 2}
+  medMeteorRateLow: 3
+  medMeteorRateHigh: 7
+  bigMeteorRateLow: 4
+  bigMeteorRateHigh: 10

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-
-	public GameObject enemyPrefab;  // TODO: Make an array of enemy prefabs
+	// GameObject prefabs
+	public GameObject enemyPrefab;
 	public GameObject bossPrefab;
 
 	// Private boss vars
