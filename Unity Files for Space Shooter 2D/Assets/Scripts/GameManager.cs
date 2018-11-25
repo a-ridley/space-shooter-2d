@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour {
 	public void BossDefeated() {
 		// Boss is defeated -> start next level
 		Debug.Log ("Boss defeated");
+		Invoke ("CompleteLevel", 2f);
+	}
+
+	void CompleteLevel() {
 		completeLevelUI.SetActive (true);
 		Invoke ("NextLevel", nextLevelDelay);
 	}
