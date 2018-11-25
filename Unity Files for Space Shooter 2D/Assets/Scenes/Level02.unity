@@ -204,6 +204,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473,
+        type: 2}
+      propertyPath: meteors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4639371072655478, guid: 621b1186f058b4e4f87f7c127387c473, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -236,23 +241,48 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4639371072655478, guid: 621b1186f058b4e4f87f7c127387c473, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473,
         type: 2}
-      propertyPath: medMeteorRateHigh
-      value: 7
-      objectReference: {fileID: 0}
+      propertyPath: meteors.Array.data[2]
+      value: 
+      objectReference: {fileID: 1101278520976798, guid: 163b7b5453310c44e806fb861da3c04b,
+        type: 2}
     - target: {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473,
         type: 2}
-      propertyPath: bigMeteorRateHigh
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      propertyPath: meteors.Array.data[4]
+      value: 
+      objectReference: {fileID: 1464296321518038, guid: 2d94fbbfff9f9e44fb3b48ecf59c0942,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114289837109337472, guid: 621b1186f058b4e4f87f7c127387c473, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 621b1186f058b4e4f87f7c127387c473, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &339803778 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1376240088754584, guid: 621b1186f058b4e4f87f7c127387c473,
+    type: 2}
+  m_PrefabInternal: {fileID: 339803777}
+--- !u!114 &339803779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339803778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5568507941a154e8cffb85b734e2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteors:
+  - {fileID: 1670864764874970, guid: 976503c26a5033842a968fce4d57cf92, type: 2}
+  - {fileID: 1101278520976798, guid: 163b7b5453310c44e806fb861da3c04b, type: 2}
+  - {fileID: 1670864764874970, guid: 976503c26a5033842a968fce4d57cf92, type: 2}
+  - {fileID: 1995222507009378, guid: ecc7571fbbd442944983c0562aea60be, type: 2}
+  - {fileID: 1464296321518038, guid: 2d94fbbfff9f9e44fb3b48ecf59c0942, type: 2}
+  medMeteorRateLow: 3
+  medMeteorRateHigh: 7
+  bigMeteorRateLow: 4
+  bigMeteorRateHigh: 10
 --- !u!1 &771377222
 GameObject:
   m_ObjectHideFlags: 0
