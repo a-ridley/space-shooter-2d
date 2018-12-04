@@ -402,6 +402,16 @@ Prefab:
       propertyPath: m_Name
       value: ScoreText
       objectReference: {fileID: 0}
+    - target: {fileID: 224870428650443404, guid: b6a5ec17db011c8488f0a5bf54483cfa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080537157623910, guid: b6a5ec17db011c8488f0a5bf54483cfa,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
   m_IsPrefabParent: 0
@@ -423,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 331382882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d487b004ae7240f1aeee4bf0c551bef, type: 3}
+  m_Script: {fileID: 11500000, guid: b8dea0f667cc541389ad82b324dad559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &436211494
@@ -463,6 +473,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4508684001106792, guid: aca2e52edbd36904e9458c7ab7edf0ae, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -596,7 +621,7 @@ Transform:
   - {fileID: 39219431}
   - {fileID: 971333040}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &971333039
 GameObject:

@@ -37,7 +37,6 @@ public class DamageHandler : MonoBehaviour {
 			invulnTimer = invulnPeriod;  // Set timer
 			gameObject.layer = 10;       // Send user to invulnerable layer
 		}
-
 	}
 
 	void Update() {

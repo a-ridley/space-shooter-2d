@@ -12,7 +12,7 @@ public class Score : MonoBehaviour {
 	void Start () {
 		score = GetComponent<Text> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		score.text = "Score: " + scoreValue;
